@@ -1,9 +1,10 @@
 /** @type {import('cz-git').UserConfig} */
 import { RuleConfigSeverity } from 'cz-git'
+import changelogPreset from 'conventional-changelog-conventionalcommits'
 
 export default {
     extends: ['@commitlint/config-conventional'],
-    parserPreset: 'conventional-changelog-conventionalcommits',
+    parserPreset: changelogPreset,
     rules: {
         'type-enum': [RuleConfigSeverity.Error, 'always', ['foo']]
     },
