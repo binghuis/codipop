@@ -7,7 +7,7 @@ export default {
         'type-enum': [RuleConfigSeverity.Error, 'always', ['foo']]
     },
     prompt: {
-        useEmoji: false,
+        useEmoji: true,
         alias: { fd: 'docs: fix typos' },
         messages: {
             type: '选择提交类型 :',
