@@ -2,14 +2,11 @@
 import { RuleConfigSeverity } from 'cz-git'
 
 export default {
-    extends: ['@commitlint/config-conventional'],
-    parserPreset: 'conventional-changelog-atom',
-    formatter: '@commitlint/format',
     rules: {
         'type-enum': [RuleConfigSeverity.Error, 'always', ['foo']]
     },
-
     prompt: {
+        useEmoji: true,
         alias: { fd: 'docs: fix typos' },
         messages: {
             type: '选择你要提交的类型 :',
@@ -54,7 +51,6 @@ export default {
                 name: 'chore:    其他修改 | Other changes that do not modify src or test files'
             }
         ],
-        useEmoji: false,
         emojiAlign: 'center',
         useAI: false,
         aiNumber: 1,
