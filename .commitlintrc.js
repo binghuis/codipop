@@ -2,11 +2,12 @@
 import { RuleConfigSeverity } from 'cz-git'
 
 export default {
+    extends: ['@commitlint/config-conventional'],
     rules: {
         'type-enum': [RuleConfigSeverity.Error, 'always', ['foo']]
     },
     prompt: {
-        useEmoji: true,
+        useEmoji: false,
         alias: { fd: 'docs: fix typos' },
         messages: {
             type: '选择你要提交的类型 :',
