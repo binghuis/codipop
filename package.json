@@ -1,0 +1,42 @@
+{
+    "name": "codipop",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev:builder": "pnpm --filter builder dev",
+        "lint": "eslint . --fix",
+        "lint:style": "stylelint \"**/*/*.{css,scss,vue}\" --fix",
+        "prepare": "husky",
+        "commit": "git-cz"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-git"
+        }
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.5.0",
+        "@commitlint/config-conventional": "^19.5.0",
+        "@commitlint/types": "^19.5.0",
+        "@eslint/js": "9.12.0",
+        "commitizen": "^4.3.1",
+        "cz-git": "^1.10.1",
+        "eslint": "^9.12.0",
+        "eslint-plugin-simple-import-sort": "12.1.1",
+        "eslint-plugin-vue": "9.29.0",
+        "globals": "15.11.0",
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3",
+        "sass-embedded": "^1.79.5",
+        "stylelint": "^16.10.0",
+        "stylelint-config-recommended-scss": "^14.1.0",
+        "stylelint-config-recommended-vue": "^1.5.0",
+        "stylelint-config-standard": "^36.0.1",
+        "typescript-eslint": "8.9.0"
+    }
+}
