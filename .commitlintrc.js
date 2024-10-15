@@ -2,7 +2,6 @@
 import { RuleConfigSeverity } from 'cz-git'
 
 export default {
-    extends: ['@commitlint/config-conventional'],
     rules: {
         'type-enum': [RuleConfigSeverity.Error, 'always', ['foo']]
     },
