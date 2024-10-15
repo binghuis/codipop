@@ -2,11 +2,10 @@
     "name": "codipop",
     "version": "0.0.1",
     "description": "",
-    "main": "index.js",
     "scripts": {
         "dev:builder": "pnpm --filter builder dev",
         "lint": "eslint . --fix",
-        "lint:style": "stylelint \"**/*/*.{css,scss,vue}\" --fix",
+        "lint:style": "stylelint \"**/*/*.{css,scss,less,vue}\" --fix",
         "prepare": "husky",
         "commit": "git-cz"
     },
